@@ -1,0 +1,9 @@
+# Copyright 2022 Raúl Zamora
+# See LICENSE file for licensing details.
+#
+
+options:
+  redirect-map:
+    default: https://jnsgr.uk/demo-routes
+    description: Map of redirects
+    type: string

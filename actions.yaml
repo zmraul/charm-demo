@@ -1,0 +1,8 @@
+# Copyright 2022 Raúl Zamora
+# See LICENSE file for licensing details.
+#
+# Learn more about actions at: https://juju.is/docs/sdk/actions
+
+pull-site:
+  description: Pulls latest version of the site from Github
+

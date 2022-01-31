@@ -1,0 +1,33 @@
+# Copyright 2022 Raúl Zamora
+# See LICENSE file for licensing details.
+
+# For a complete list of supported options, see:
+# https://discourse.charmhub.io/t/charm-metadata-v2/3674/15
+name: mydemo
+display-name: |
+  DemoCharm
+description: |
+  Tutorial on how to create a charm using the Kubecon 2021 demo
+summary: |
+  Tutorial charm
+
+containers:
+  gosherve:
+    resource: gosherve-image
+    mounts:
+      - storage: webroot
+        location: /srv
+
+resources:
+  gosherve-image:
+    type: oci-image
+    description: OCI image for gosherve
+
+storage:
+  webroot:
+    type: filesystem
+    location: /srv
+
+requires:
+  ingress:
+    interface: ingress
